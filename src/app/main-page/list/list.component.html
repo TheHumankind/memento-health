@@ -1,0 +1,56 @@
+<div class="list-container" [ngSwitch]="(tag$ | async)">
+  <div class="list" *ngSwitchCase="'drugs'">
+    <app-ui-search (inputEmitter)="inputEmitter($event)" [placeholder]="'Поиск лекарств'"></app-ui-search>
+    <div class="box">
+        <app-list-item
+          *ngFor="let drug of (sortedDrugs$ | async)"
+          [name]="drug.name"
+          [analogiesPL]="drug.analogiesPL"
+          (click)="toDrug(drug.name)">
+      </app-list-item>
+    </div>
+  </div>
+
+
+
+  <div *ngSwitchCase="'body-problems'">
+    <div class="list">
+      <div class="list-header">
+        <span>Конкретизируйте проблему</span>
+      </div>
+      <app-ui-search (inputEmitter)="inputEmitter($event)" [placeholder]="'Введите недуг'"></app-ui-search>
+      <div class="box">
+        <app-list-item
+        *ngFor="let issue of (sortedBodyIssues$ | async)"
+        [name]="issue"
+        (click)="toDeseases(issue)">
+      </app-list-item>
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngSwitchCase="'deseases'">
+    <div class="list">
+      <div class="list-header">
+        <span>
+          {{ (selectedDesease$ | async)!.name }}
+        </span>
+        <span style="margin: 0px 10px;"> => </span>
+        <span>
+          {{ ' ' +(selectedDesease$ | async)!.namePL}}
+        </span>
+      </div>
+      <div class="list-drugs-names">
+        <app-ui-search (inputEmitter)="inputEmitter($event)" [placeholder]="'Поиск лекарств'"></app-ui-search>
+      </div>
+      <div class="box">
+        <app-list-item
+        *ngFor="let drug of (selectedDesease$ | async)!.drugs"
+        [name]="drug"
+        (click)="toDrug(drug)">
+      </app-list-item>
+      </div>
+    </div>
+  </div>
+</div>

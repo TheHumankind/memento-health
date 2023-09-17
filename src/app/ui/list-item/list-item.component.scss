@@ -1,0 +1,35 @@
+:host {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 16px;
+  overflow: hidden;
+
+  .item {
+    border-bottom: 1px solid black;
+  }
+
+  &:last-child .item {
+    border-bottom: none;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  column-gap: 10px;
+
+  color: #F95355;
+
+  &-name {
+    font-size: 24px;
+  }
+
+  &-analogies {
+    text-align: left;
+    color: #B0D894;
+  }
+}

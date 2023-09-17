@@ -1,0 +1,16 @@
+<div class="drug" *ngIf="(drug$ | async)">
+  <h2 class="name">
+    {{ (drug$ | async)!.name }}
+  </h2>
+  <div class="descr">
+    <div>
+      <div class="analog" *ngFor="let drug of (drug$ | async)!.analogiesPL"> {{ drug }} </div>
+    </div>
+    <div class="text">
+      Drug description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet omnis quia hic placeat? Voluptatum dolorum atque molestiae nisi placeat nam?
+    </div>
+  </div>
+</div>
+<button class="button" (click)="toWelcome()">
+  <img src="../../../assets/home_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+</button>

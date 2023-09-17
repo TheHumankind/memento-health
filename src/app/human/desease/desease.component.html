@@ -1,0 +1,18 @@
+<div class="human">
+  <div class="human-2d-model">
+    <div class="head" (click)="toHeadProblems()">
+
+    </div>
+    <div class="arm-left">
+
+    </div>
+    <div class="arm-right">
+
+    </div>
+    <img src="../../../assets/dude-color.png" alt="">
+  </div>
+  <div class="search">
+    <app-ui-search (inputEmitter)="inputEmitter($event)" [placeholder]="'Поиск недуга'"></app-ui-search>
+    <button class="button" (click)="toProblems()" style="height: 30px; border: none; border-radius: 16px; font-size: 18px; padding: 5px"> Найти </button>
+  </div>
+</div>

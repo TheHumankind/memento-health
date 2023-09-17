@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.choose {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  &-drugs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-desease {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100;
+    height: 100%;
+    background-color: #29292B;
+  }
+
+  &-drugs > img, &-desease > img {
+    max-width: 100px;
+    width: 100%;
+  }
+}

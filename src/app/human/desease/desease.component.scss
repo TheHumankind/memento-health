@@ -1,0 +1,46 @@
+.human {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 10px;
+    padding: 0px 20px;
+  }
+
+  &-2d-model {
+    position: relative;
+    max-width: 200px;
+    width: calc(100% - 150px);
+
+    .head {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 23%;
+      height: 16%;
+      transform: translate(-50%);
+    }
+
+    .arm-left {
+      position: absolute;
+      left: 25%;
+      top: 0;
+      width: 23%;
+      height: 16%;
+      transform: translate(-50%);
+    }
+
+    & > img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Ибупрофен",
+    "analogiesPL": [
+      "Nurofen forte",
+      "Mig",
+      "Ibuprom"
+    ],
+    "analogiesAZ": []
+  },
+  {
+    "name": "Бетагистин",
+    "analogiesPL": [
+      "Vestibo",
+      "Betaserc",
+      "Histigen"
+    ],
+    "analogiesAZ": []
+  },
+  {
+    "name": "Парацетамол",
+    "analogiesPL": [
+      "АРАР",
+      "Panadol",
+      "Febrison"
+    ],
+    "analogiesAZ": []
+  },
+  {
+    "name": "Цитрамон",
+    "analogiesPL": [
+      "Excedrin Migrastop",
+      "Thomapyrin",
+      "Etopiryna extra",
+      "Apap migrena"
+    ],
+    "analogiesAZ": [
+      "Lyrica"
+    ]
+  },
+  {
+    "name": "Панкреатин",
+    "analogiesPL": [
+      "Kreon",
+      "Lipancrea 8000"
+    ],
+    "analogiesAZ": []
+  }
+]

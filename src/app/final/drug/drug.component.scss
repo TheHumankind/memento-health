@@ -1,0 +1,30 @@
+.name {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.descr {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.analog {
+  color: #F95355;
+}
+
+.text {
+  margin-top: 20px;
+  color: #57A4B1;
+}
+
+.button {
+  margin-top: 120px;
+  border: none;
+  background-color: transparent;
+
+  & > img {
+    width: 100px;
+  }
+}
